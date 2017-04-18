@@ -1,0 +1,247 @@
+
+/***************************************/
+/* Types */
+/***************************************/
+
+.dex_effectiveness_table {
+    width: auto;
+    border-collapse: collapse;
+    margin: .3em 0 2em 0;
+}
+
+.dex_effectiveness_table th, .dex_effectiveness_table td {
+    padding: .5em;
+}
+
+.dex_effectiveness_table tbody td {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.dex_effectiveness_table caption {
+    margin: 0;
+}
+
+.dex_mod2 {
+   background: yellow;
+}
+
+.dex_mod05 {
+   background: orange;
+}
+
+.dex_mod0 {
+   background: red;
+}
+
+/***************************************/
+/* Pokemon*/
+/***************************************/
+
+#dex_pokemon {
+}
+
+#dex_pokemon .sprite {
+    width: 1px;
+} 
+
+#dex_pokemon .header {
+    padding-left: 1em;
+}
+
+#dex_pokemon .header h1 {
+    background: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+#dex_pokemon .ability {
+   width: 99%;
+   padding-left: 1em;
+}
+
+/***************************************/
+/* Stats */
+/***************************************/
+
+#dex_pokemon_stats {
+     border-collapse: collapse;
+     width: 1px;
+}
+
+#dex_pokemon_stats td, #dex_pokemon_stats th {
+     padding: .2em .7em;
+}
+
+#dex_pokemon_stats thead th {
+     text-align: left;
+}
+
+#dex_pokemon_stats tbody th {
+     text-align: right;
+}
+
+#dex_pokemon_stats .bar div {
+     padding: .2em .3em;
+}
+
+/***************************************/
+/* Type */
+/***************************************/
+
+.strategyheader {
+	margin-bottom: 0;
+}
+
+.strategyheader .name {
+    width: 1px;
+    vertical-align: middle;
+}
+
+.strategyheader .name h2 {
+    font-size:1.4em;
+    font-weight: normal;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    padding-right: 1.5em;
+}
+
+.strategyheader td {
+    width: 33.3%;
+}
+
+.strategyheader td.rbymoves {
+    width: 75%;
+} 
+
+.moveset td {
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/***************************************/
+/* Strategy */
+/***************************************/
+
+.Type {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    text-shadow: 1px 1px 1px #333;
+    width: 5em;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box
+}
+.Type.normal {
+    background: linear-gradient(#a8a878, #8a8a59);
+    border-color: #79794E
+}
+.Type.fire {
+    background: linear-gradient(#f08030, #dd6610);
+    border-color: #B4530D
+}
+.Type.water {
+    background: linear-gradient(#6890f0, #386ceb);
+    border-color: #1753E3
+}
+.Type.electric {
+    background: -webkit-linear-gradient(#f8d030, #f0c108);
+    background: linear-gradient(#f8d030, #f0c108);
+    border-color: #C19B07
+}
+.Type.fairy {
+    background: linear-gradient(#F98CFF, #F540FF);
+    border-color: #C1079B
+}
+.Type.grass {
+    background: linear-gradient(#78c850, #5ca935);
+    border-color: #4A892B
+}
+.Type.ice {
+    background: linear-gradient(#98d8d8, #69c6c6);
+    border-color: #45B6B6
+}
+.Type.fighting {
+    background: linear-gradient(#c03028, #9d2721);
+    border-color: #82211B
+}
+.Type.poison {
+    background: linear-gradient(#a040a0, #803380);
+    border-color: #662966
+}
+.Type.ground {
+    background: linear-gradient(#e0c068, #d4a82f);
+    border-color: #AA8623
+}
+.Type.flying {
+    background: linear-gradient(#a890f0, #9180c4);
+    border-color: #7762B6
+}
+.Type.psychic {
+    background: linear-gradient(#f85888, #f61c5d);
+    border-color: #D60945
+}
+.Type.bug {
+    background: linear-gradient(#a8b820, #8d9a1b);
+    border-color: #616B13
+}
+.Type.rock {
+    background: linear-gradient(#b8a038, #93802d);
+    border-color: #746523
+}
+.Type.ghost {
+    background: linear-gradient(#705898, #554374);
+    border-color: #413359
+}
+.Type.dragon {
+    background: linear-gradient(#7038f8, #4c08ef);
+    border-color: #3D07C0
+}
+.Type.steel {
+    background: linear-gradient(#b8b8d0, #9797ba);
+    border-color: #7A7AA7
+}
+.Type.dark {
+    background: linear-gradient(#705848, #513f34);
+    border-color: #362A23
+}
+.Type.question {
+    background: linear-gradient(#68a090, #4e7c6f);
+    border-color: #41685D
+}
+.Type.physical {
+    background: linear-gradient(#e39088, #d65d51);
+    border-color: #A99890;
+    color: #FBC290
+}
+.Type.special {
+    background: linear-gradient(#adb1bd, #7d828d);
+    border-color: #A1A5AD;
+    color: #E0E2E4
+}
+.Type.status {
+    background: linear-gradient(#cbc9cb, #aaa6aa);
+    border-color: #A99890;
+    color: #F5F4F5
+}
+.Type {
+    color: #FFF;
+    text-decoration: none
+}
+.Type:hover {
+    opacity: .7;
+    text-decoration: none
+}
