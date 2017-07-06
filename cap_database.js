@@ -33,6 +33,8 @@ function Syclant() {
 	cap.ability1 = "Compound Eyes";
 	cap.ability1Desc = "Raises accuracy by 30% and increases the probability of wild Pokemon holding items.";
 	cap.customAbility2 = Mountaineer();
+	cap.ability3 = "Ice Body";
+	cap.ability3Desc = "Heals 1/16 of max HP in hail.";
 
 	cap.baseHP = 70;
 	cap.baseAttack = 116;
@@ -63,6 +65,8 @@ function Revenankh() {
 	cap.ability1Desc = "30% chance to heal status.";
 	cap.ability2 = "Air Lock";
 	cap.ability2Desc = "Blocks the effects of weather.";
+	cap.ability3 = "Triage";
+	cap.ability3Desc = "This Pokemon's healing moves have their priority increased by 3.";
 
 	cap.baseHP = 90;
 	cap.baseAttack = 105;
@@ -129,6 +133,8 @@ function Pyroak() {
 	cap.ability1Desc = "Negates recoil from recoil moves.";
 	cap.ability2 = "Battle Armor";
 	cap.ability2Desc = "Prevents critical hits.";
+	cap.ability3 = "White Smoke";
+	cap.ability3Desc = "Prevents the enemy from lowering this Pokemon's stats and decreases wild encounter rate.";
 
 	cap.baseHP = 120;
 	cap.baseAttack = 70;
@@ -172,6 +178,8 @@ function Fidgit() {
 	cap.customAbility1 = Persistent();
 	cap.ability2 = "Vital Spirit";
 	cap.ability2Desc = "Prevents sleep. Increases wild encounters with higher level Pokemon.";
+	cap.ability3 = "Frisk";
+	cap.ability3Desc = "Reveals the foe's items.";
 
 	cap.baseHP = 95;
 	cap.baseAttack = 76;
@@ -187,12 +195,14 @@ function Fidgit() {
 function Persistent() {
 	var ability = new CustomAbility();
 	ability.abilityName = "Persistent";
-	ability.shortDesc = "Increases the duration of Gravity, Heal Block, Safeguard, Tailwind, and Trick Room by two turns when used by this Pokemon.";
-	ability.longDesc = 'When <a href="/dp/moves/gravity/">Gravity</a>, ' +
+	ability.shortDesc = "Increases the duration of several field moves by two turns when used by this Pokemon.";
+	ability.longDesc = 'When <a href="/sm/moves/gravity/">Gravity</a>, ' +
 		'<a href="/sm/moves/trick_room/">Trick Room</a>, ' +
 		'<a href="/sm/moves/heal_block/">Heal Block</a>, ' +
-		'<a href="/sm/moves/safeguard/">Safeguard</a>, or ' +
-		'<a href="/sm/moves/tailwind/">Tailwind</a> is used by this Pokemon, ' +
+		'<a href="/sm/moves/magic_room/">Magic Room</a>, ' +
+		'<a href="/sm/moves/safeguard/">Safeguard</a>, ' +
+		'<a href="/sm/moves/tailwind/">Tailwind</a>, or ' +
+		'<a href="/sm/moves/wonder_room/">Wonder Room</a> is used by this Pokemon, ' +
 		'it will last for two turns longer than it otherwise would. ' +
 		'This extension remains even after the holder switches out.';
 	return ability;
@@ -207,6 +217,8 @@ function Stratagem() {
 	cap.ability1Desc = "This Pokemon is immune to Ground-type moves.";
 	cap.ability2 = "Technician";
 	cap.ability2Desc = "Increases power of moves with 60 base power or less by 50%.";
+	cap.ability3 = "Sniper";
+	cap.ability3Desc = "Critical hits do 2.25x damage instead of 1.5x.";
 
 	cap.baseHP = 90;
 	cap.baseAttack = 60;
@@ -239,6 +251,8 @@ function Arghonaut() {
 
 	cap.ability1 = "Unaware";
 	cap.ability1Desc = "Ignores stat boosts and debuffs on other Pokemon.";
+	cap.ability3 = "Technician";
+	cap.ability3Desc = "Increases power of moves with 60 base power or less by 50%.";
 
 	cap.baseHP = 105;
 	cap.baseAttack = 110;
@@ -261,6 +275,8 @@ function Kitsunoh() {
 	cap.ability1Desc = "Reveals the foe's item.";
 	cap.ability2 = "Limber";
 	cap.ability2Desc = "Blocks paralysis.";
+	cap.ability3 = "Iron Fist";
+	cap.ability3Desc = "Increases the power of punching moves by 20%.";
 
 	cap.baseHP = 80;
 	cap.baseAttack = 103;
@@ -295,6 +311,8 @@ function Cyclohm() {
 	cap.ability1Desc = "Secondary effects won't occur.";
 	cap.ability2 = "Static";
 	cap.ability2Desc = "Enemies' contact moves can paralyze them.";
+	cap.ability3 = "Damp";
+	cap.ability3Desc = "Prevents the use of Self-Destruct or Explosion.";
 
 	cap.baseHP = 108;
 	cap.baseAttack = 60;
@@ -316,6 +334,8 @@ function Colossoil() {
 	cap.customAbility1 = Rebound();
 	cap.ability2 = "Guts";
 	cap.ability2Desc = "Attack is increased 50% when afflicted by a non-volatile status.";
+	cap.ability3 = "Unnerve";
+	cap.ability3Desc = "Prevents the foe from consuming its held Berry item.";
 
 	cap.baseHP = 133;
 	cap.baseAttack = 122;
@@ -346,6 +366,8 @@ function Krilowatt() {
 	cap.ability1Desc = "Copies foe's ability.";
 	cap.ability2 = "Magic Guard";
 	cap.ability2Desc = "Prevents indirect damage.";
+	cap.ability3 = "Minus";
+	cap.ability3Desc = "If allied with a Pokemon with Plus or Minus, its Special Attack increases by 50%.";
 
 	cap.baseHP = 151;
 	cap.baseAttack = 84;
@@ -368,6 +390,8 @@ function Voodoom() {
 	cap.ability1Desc = "Heals 25% HP when hit by an Electric-type attack.";
 	cap.ability2 = "Lightning Rod";
 	cap.ability2Desc = "All Electric-type attacks target this Pokemon. Grants immunity to Electric-type moves and boosts Special Attack by 1 stage when hit by an Electric-type move.";
+	cap.ability3 = "Cursed Body";
+	cap.ability3Desc = "The wielder has a 30% chance to disable any move that hits it.";
 
 	cap.baseHP = 90;
 	cap.baseAttack = 85;
@@ -552,8 +576,8 @@ function Aurumoth() {
 	cap.ability1Desc = "Boosts Speed by 2 stages and lowers Defense by 1 stage when the user is hit by a physical move.";
 	cap.ability2 = "No Guard";
 	cap.ability2Desc = "All attacks used by and used on this Pokemon will never miss.";
-	cap.ability3 = "Illusion";
-	cap.ability3Desc = "The wielder appears as the last Pokemon in the party to the opponent.";
+	cap.ability3 = "Light Metal";
+	cap.ability3Desc = "The wielder's weight is halved.";
 
 	cap.baseHP = 110;
 	cap.baseAttack = 120;
@@ -598,6 +622,8 @@ function Malaconda() {
 	cap.ability1Desc = "After each turn, the wielder may receive the Berry it used at a 50% chance (100% if in sun).";
 	cap.ability2 = "Infiltrator";
 	cap.ability2Desc = "The wielder bypasses the foe's Light Screen, Reflect, Mist, Safeguard, and Substitute.";
+	cap.ability3 = "Drought";
+	cap.ability3Desc = "Summons sun.";
 
 	cap.baseHP = 115;
 	cap.baseAttack = 100;
@@ -807,8 +833,8 @@ function Naviathan() {
 	cap.type1 = "Water";
 	cap.type2 = "Steel";
 
-	cap.ability1 = "Water Veil";
-	cap.ability1Desc = "Prevents burn.";
+	cap.ability1 = "Guts";
+	cap.ability1Desc = "Attack is increased 50% when afflicted by a non-volatile status.";
 	cap.ability2 = "Heatproof";
 	cap.ability2Desc = "Reduces Fire damage 50%.";
 	cap.ability3 = "Light Metal";
